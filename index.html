@@ -11,6 +11,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 
    <link rel="stylesheet" type="text/css" href="style.css">
+   <script src=" https://unpkg.com/ml5@0.4.3/dist/ml5.min.js "></script>
  </head>
 
  <body>
@@ -33,32 +34,32 @@
          <p>On of the following gestures the model is trained - </p>
          <span>&#128076;</span>
          <b class="symbol">|</b>
-           <span>&#9996;</span>
-          <b class="symbol">|</b>
-           <span>&#128077;</span>
-         </p>
+         <span>&#9996;</span>
+         <b class="symbol">|</b>
+         <span>&#128077;</span>
+       </p>
 
 
-         <div class="col-md-4 col-sm-12 col-xs-12">
-           <label>Webcam Veiw - </label>
-           <div id="camera"></div>
-           <br><br>
-           <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
-         </div>
+       <div class="col-md-4 col-sm-12 col-xs-12">
+         <label>Webcam Veiw - </label>
+         <div id="camera"></div>
+         <br><br>
+         <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
+       </div>
 
 
-         <div class="col-md-4 col-sm-12 col-xs-12">
-           <label>Prediction</label>
-           <p class="emotion_name" id="result_emotion_name"></p>
-           <p class="emoji" id="update_emoji"></p>
-         </div>
+       <div class="col-md-4 col-sm-12 col-xs-12">
+         <label>Prediction</label>
+         <p class="emotion_name" id="result_emotion_name"></p>
+         <p class="emoji" id="update_emoji"></p>
+       </div>
 
-         <div class="col-md-4 col-sm-12 col-xs-12">
-           <label>Snapshot - </label>
-           <div id="result"></div>
-           <br><br>
-           <button onclick="check()" class="btn btn-success">Predict Emotion</button>
-         </div>
+       <div class="col-md-4 col-sm-12 col-xs-12">
+         <label>Snapshot - </label>
+         <div id="result"></div>
+         <br><br>
+         <button onclick="check()" class="btn btn-success">Predict Emotion</button>
+       </div>
 
      </center>
    </div>
